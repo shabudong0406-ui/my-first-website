@@ -182,3 +182,305 @@
     border-right-color: var(--border);
   }
 }
+
+#buttons {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#buttons .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+#inputs {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#inputs .input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+#navigation {
+  padding: 32px 20px;
+}
+
+#dropdown {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#checkbox {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#checkbox .checkbox-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#radio {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#slider {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#slider .MuiSlider-root {
+  width: min(400px, 90%);
+}
+
+#modal {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#cards {
+  padding: 32px 20px;
+  box-sizing: border-box;
+}
+
+#dragdrop {
+  padding: 32px 20px;
+}
+
+#dragdrop .drop-zones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+#dragdrop .drop-zone {
+  flex: 1 1 240px;
+  max-width: 320px;
+  min-height: 200px;
+  padding: 12px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#dragdrop .drop-zone.over {
+  border-color: #1976d2;
+  background-color: rgba(25, 118, 210, 0.1);
+}
+
+#dragdrop .drop-zone h3 {
+  margin: 0 0 4px;
+}
+
+#dragdrop .drag-item {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  cursor: grab;
+  user-select: none;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+#dragdrop .drag-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#dragdrop .drag-item.dragging {
+  opacity: 0.4;
+  cursor: grabbing;
+}
+
+#scroll {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#animation {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#animation .anim-buttons,
+#animation .anim-stage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+#animation .anim-stage {
+  min-height: 110px;
+}
+
+#animation .anim-slide-container {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+#animation .anim-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#animation .anim-box.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+#menu {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#sidebar {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#hover {
+  padding: 32px 20px;
+}
+
+#hover .hover-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+#hover .hover-card {
+  width: 140px;
+  height: 100px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+  transition: all 0.3s ease;
+}
+
+#hover .hover-color:hover {
+  background: #1976d2;
+  border-color: #1976d2;
+  color: #fff;
+}
+
+#hover .hover-scale:hover {
+  transform: scale(1.15);
+}
+
+#hover .hover-shadow:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+#hover .hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+#hover .hover-rotate:hover {
+  transform: rotate(8deg);
+}
+
+#hover .hover-border:hover {
+  border-color: #d32f2f;
+  border-width: 4px;
+}
+
+#swipe {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#swipe .swipe-viewport {
+  width: min(400px, 100%);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+#swipe .swipe-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+#swipe .swipe-slide {
+  flex: 0 0 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#swipe .swipe-slide img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#swipe .swipe-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
